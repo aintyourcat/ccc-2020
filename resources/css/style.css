@@ -1,0 +1,222 @@
+/* The self hosted font is defined here */
+/* nunito-regular - latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../vendors/nunito-v14-latin/nunito-v14-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Nunito Regular'), local('Nunito-Regular'),
+       url('../../vendors/nunito-v14-latin/nunito-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../vendors/nunito-v14-latin/nunito-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../vendors/nunito-v14-latin/nunito-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../../vendors/nunito-v14-latin/nunito-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../../vendors/nunito-v14-latin/nunito-v14-latin-regular.svg#Nunito') format('svg'); /* Legacy iOS */
+}
+
+/* nunito-700 - latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../vendors/nunito-v14-latin/nunito-v14-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Nunito Bold'), local('Nunito-Bold'),
+       url('../../vendors/nunito-v14-latin/nunito-v14-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../vendors/nunito-v14-latin/nunito-v14-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../vendors/nunito-v14-latin/nunito-v14-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../../vendors/nunito-v14-latin/nunito-v14-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../../vendors/nunito-v14-latin/nunito-v14-latin-700.svg#Nunito') format('svg'); /* Legacy iOS */
+}
+
+/* nunito-800 - latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../../vendors/nunito-v14-latin/nunito-v14-latin-800.eot'); /* IE9 Compat Modes */
+  src: local('Nunito ExtraBold'), local('Nunito-ExtraBold'),
+       url('../../vendors/nunito-v14-latin/nunito-v14-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../vendors/nunito-v14-latin/nunito-v14-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../vendors/nunito-v14-latin/nunito-v14-latin-800.woff') format('woff'), /* Modern Browsers */
+       url('../../vendors/nunito-v14-latin/nunito-v14-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../../vendors/nunito-v14-latin/nunito-v14-latin-800.svg#Nunito') format('svg'); /* Legacy iOS */
+}
+
+/* Set all element into a border box */
+* { 
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Set Open Sans 16 as global font */
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16;
+    line-height: 1.5;
+}
+
+/* Set Proza-Libre as headline font */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 800;
+    line-height: 1;
+}
+
+/* Navigation bar */
+.navbar-container {
+    padding: 16px 10%;
+    width: 100%;
+}
+
+.navbar {
+    background-color: #fff;
+    overflow: hidden;
+    width: 100%;
+}
+
+.button {
+    color: #000;
+    cursor: pointer;
+    display: block;
+    float: left;
+    line-height: 1;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.right-aligned {
+    float: right!important;
+}
+
+.right-aligned .button {
+    color: #777;
+}
+
+.right-aligned .button:hover {
+    color: #000;
+}
+
+/* Header */
+header {
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    padding: 36px 16px;
+    width: 100%;
+}
+
+header>div {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+header>div>img {
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    max-width: 125px;
+    width: 100%;
+}
+
+header>div>h1 {
+    padding: 10px;
+}
+
+/* Work Section */
+.section-container {
+    padding: 36px 16px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.column {
+    flex: 25%;
+    font-size: 14px;
+    max-width: 25%;
+    padding: 0px 16px;
+}
+
+.column img {
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+}
+
+.column img:hover {
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Footer */
+footer {
+    background-color: #fff;
+    padding: 16px 10%;
+    text-align: right;
+}
+
+footer .button {
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    float: none;
+    padding: 10px 2.5px;
+    text-align: inherit;
+    text-decoration: none;
+}
+
+footer .button:hover {
+    color: #777;
+}
+
+/* Custom styles for small display */
+@media (max-width: 600px){
+   /* Activities Section */
+     .section-container {
+        padding-left: 10%!important;
+        padding-right: 10%!important;
+    }
+
+    .column {
+        flex: 100%!important;
+        max-width: 100%!important;
+    }
+
+    .column:not(:first-child) {
+        padding-top: 16px!important;
+    }
+}
+
+/* Custom styles for medium display */
+@media (max-width: 992px) and (min-width: 601px){
+    /* Activities Section */
+    .section-container {
+        padding-left: 10%!important;
+        padding-right: 10%!important;
+    }
+
+    .row {
+        justify-content: space-between;
+    }
+
+    .column {
+        flex: 50%!important;
+        max-width: 50%!important;
+        padding-top: 16px;
+    }
+}
+
+/* Custom styles for large display */
+@media (min-width: 993px){
+}
